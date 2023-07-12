@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="e1" class="com.bean.Employee" abstract="true">
+<property name="email" value="rakesh@gmail.com"/>
+</bean>
+
+<bean id="e2" class="com.bean.Employee" parent="e1">
+<property name="eid" value="1"/>
+<property name="fname" value="Rakesh"/>
+<property name="lname" value="Kharva"/>
+
+</bean>
+
+
+</beans>
